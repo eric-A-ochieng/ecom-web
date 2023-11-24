@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Your Order</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="style.css" media="screen" type="text/css" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.store.js"></script>
+<script type="text/javascript"
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body id="checkout-page">
+
+<div id="site">
+	<header id="masthead">
+		<h1></h1>
+	</header>
+	<div id="content">
+		<h1>Your Order</h1>
+			<table id="checkout-cart" class="shopping-cart">
+			  <thead>
+				<tr>
+					<th scope="col">Item</th>
+					<th scope="col">Qty</th>
+					<th scope="col">Price</th>
+				</tr>
+			  </thead>
+			  <tbody>
+			  
+			  </tbody>
+			</table>
+		 <div id="pricing">
+			
+			<p id="shipping">
+				<strong>Shipping</strong>: <span id="sshipping"></span>
+			</p>
+			
+			<p id="sub-total">
+				<strong>Total</strong>: <span id="stotal"></span>
+			</p>
+		 </div>
+		 
+		 <div id="user-details">
+		 	<h2>Your Data</h2>
+		 	<div id="user-details-content"></div>
+		 </div>
+		 
+		 
+		 
+		 
+<form id="paypal-form" action="" method="post">
+	<input type="hidden" name="cmd" value="_cart" />
+	<input type="hidden" name="upload" value="1" />
+	<input type="hidden" name="business" value="" />
+        
+	<input type="hidden" name="currency_code" value="" />
+	<input type="submit" id="paypal-btn" class="btn" value="Pay with PayPal" />
+    <!-- Stripe button -->
+<input type="submit" id="stripe-btn" class="btn" value="Pay with Stripe" />
+
+<!-- M-Pesa button -->
+<input type="submit" id="mpesa-btn" class="btn" value="Pay with M-Pesa" />
+</form>
+		 
+		 
+	</div>
+	
+	
+
+</div>
+
+<footer class="section-p1">
+    <div class="col">
+        <p> <strong>GREENLY FRUITS</strong></p>
+        <h4>Contact</h4>
+        <p><strong>Address:</strong> 100 Thika Road, RUiru</p>
+        <p><strong>Phone:</strong> 0790794839</p>
+        <p><strong>Hours:</strong> 08:00 - 18:00, Mon - Sat</p>
+        <div class="follow">
+            <h4>Follow us</h4>
+            <div class="icon">
+                 <i class='bx bxl-facebook'></i>
+                 <i class='bx bxl-twitter'></i>
+                 <i class='bx bxl-instagram-alt' ></i>
+                 <i class='bx bxl-linkedin' ></i>
+                 <i class='bx bxl-pinterest' ></i>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <h4>About</h4>
+        <a href="#">About us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Condition</a>
+        <a href="#">Contact Us</a>
+    </div>
+    <div class="col">
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+    </div>
+    <div class="col">
+        <h4>Secured Payment Gateways </h4>
+        <h4>MPESA <br> VISA <br>
+            BANK PAYMENT </h4>
+    
+    </div>
+    <div class="copyright">
+    <h4>® 2023, Eric etc - HTML CSS Ecommerce web</h4>
+    </div>
+     </footer>
+</body>
+</html>	
+
+   
